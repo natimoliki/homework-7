@@ -20,7 +20,7 @@ function getInfo() {
     });
     div.appendChild(ulelement);
   });
-  reqsuist.send();
+  request.send();
 }
 
 getInfo();
