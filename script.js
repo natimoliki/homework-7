@@ -2,10 +2,10 @@
 const div = document.getElementById('happy-api');
 
 function getInfo() {
-  const reqsuist = new XMLHttpRequest();
+  const request = new XMLHttpRequest();
 
-  reqsuist.open("GET", "https://reqres.in/api/unknown");
-  reqsuist.addEventListener("load", function () {
+  request.open("GET", "https://reqres.in/api/unknown");
+  request.addEventListener("load", function () {
         //   console.log(this.responseText);
     const receivedInfo = this.responseText;
     const receivedInfoasJS = JSON.parse(receivedInfo);
